@@ -286,15 +286,7 @@ nav .button::before {
     border: 6px solid rgb(27, 100, 136);
 
 }
-.section6 .button a{
-    border: 1px solid white;
-    color: #fff;
-    font-size: 27px;
-}
-.section6 .button a:hover{
-    border: 1px solid rgb(27, 100, 136);
-    color: rgb(27, 100, 136);
-}
+
 .section6 .button {
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -372,4 +364,26 @@ footer{
     background-color: #002233;
     color: #fff;
     padding: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .section1 .welcome h1{
+    font-size:40px;
+    
+}
+.section1 .welcome h1 span{
+    font-size: 64px;
+}
+.section1 .button{
+  width: 100%;
+}
+.section6 .button{
+  width: 100%;
+}
+.section2 h1,.section3 h1,.section4 h1,.section5 h1{
+  font-size: 30px;
+}
+.section6 h2{
+  font-size: 20px;
+}
 }
