@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;    
+}
+
+/* navbar */
+
+nav{
+    background-color: #002233;
+    padding: 20px ;
+}
+
+nav .button a{
+  border: 1px solid white;
+  color: #fff;
+  font-size: 27px;
+}
+nav .button a:hover{
+  border: 1px solid rgb(27, 100, 136);
+  color: rgb(27, 100, 136);
+}
+nav .button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.2rem;
+  padding-inline: 1.25rem;
+  background-color: #002233;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff;
+  outline: none;
+  overflow: hidden;
+  font-size: 13px;
+  width:100%;
+  margin-top: .3rem;
+}
+
+nav .icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+  text-decoration: none;
+}
+
+nav .button:hover .icon {
+  transform: translate(4px);
+}
+
+nav .button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+nav .button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+/* Section1 */
+
+.section1{
+   padding-top: 120px;
+   padding-bottom: 90px;
+}
+.section1 .welcome{
+    display: flex;
+    align-items: center;
+}
+.section1 .welcome h1{
+    font-size:50px;
+    font-weight: 700;
+    
+}
+.section1 .welcome h1 span{
+    color: #002233;
+    font-size: 100px;
+    
+}
+.section1 .welcome p{
+    font-size:22px;
+}
+
+
+.section1 .button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #002233;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    width: 41%;
+    
+  }
+  
+  .section1 .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .section1 .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+    text-decoration: none;
+  }
+  
+ .section1 .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+ .section1 .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+ .section1 .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+/* Section 2 */
+.section2{
+    padding-top: 60px;
+    background-color:#002233;
+}
+.section2 h1{
+    font-size: 50px;
+    padding-bottom: 90px;
+}
+.section2 .card{
+    border-radius: 20px;
+    margin-bottom: 80px;
+    border: 5px solid #002233;
+    max-height: 245px;
+    min-height: 245px;
+}
+.section2 .card h3{
+    color: #002233;
+}
+.section2 .card-img-top-circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: -50px;
+    border: 5px solid #fff; 
+    background-color: #fff;
+}
+
+/* Section 3 */
+
+.section3{
+    padding: 60px 0;
+}
+.section3 h1{
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+
+/* section 4 */
+.section4{
+    background-color:#002233;
+    padding: 60px 0;
+}
+
+.section4 h1{
+    padding-bottom: 50px;
+    font-size: 50px;
+    color: #fff;
+}
+.section4 video {
+
+    width:100%;
+    /* height: 600px; */
+    object-fit: cover;
+    
+}
+/* Section 5 */
+
+.section5{
+    padding: 80px 0; 
+}
+.section5 h1{
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+
+/* .section5 img{
+    width: 80%;
+    height: 120px;
+    object-fit: contain;
+} */
+
+
+
+/* section6 */
+
+.section6{
+    padding-bottom: 100px;
+}
+.section6 .contact-card{
+    border-radius: 30px;
+    /* background-image:radial-gradient(rgb(27, 100, 136), rgb(1, 33, 51)); */
+    color: #fff;
+    background-color: #002233;
+    border: 6px solid rgb(27, 100, 136);
+
+}
+.section6 .button a{
+    border: 1px solid white;
+    color: #fff;
+    font-size: 27px;
+}
+.section6 .button a:hover{
+    border: 1px solid rgb(27, 100, 136);
+    color: rgb(27, 100, 136);
+}
+.section6 .button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #002233;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    width: 27%;
+  }
+  
+  .section6 .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .section6 .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+    text-decoration: none;
+  }
+  
+ .section6 .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+ .section6 .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+ .section6 .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+/* footer */
+
+footer{
+    background-color: #002233;
+    color: #fff;
+    padding: 10px 0;
+}
